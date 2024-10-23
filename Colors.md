@@ -28,4 +28,14 @@ HSL stands for hue, saturation, and lightness. A color can be specified using HS
 `hsl(hue, saturation, lightness)`. Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue. Saturation is a percentage value. `0%` means a shade of gray, and `100%` is the full color. Lightness is also a percentage. `0%` is black, `50%` is neither light or dark, `100%` is white.
 ![[Pasted image 20241023085748.png]]
 ## Saturation
-Saturation can be described as the intensity of a color.
+Saturation can be described as the intensity of a color. `100%` is pure color, no shades of gray. `50%` is `50%` gray, but you can still see the color. `0%` is completely gray; you can no longer see the color.
+![[Pasted image 20241023090111.png]]
+## Lightness
+The lightness of a color can be described as how much light you want to give the color, where `0%` means no light (black), `50%` means `50%` light (neither dark nor light) and `100%` means full lightness (white).
+![[Pasted image 20241023090310.png]]
+Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from `0%` to `100%` to get darker/lighter shades:
+ ![[Pasted image 20241023090435.png]]
+# HSLA Value
+HSLA color values are an extension of HSL values with an alpha channel - which specifies the opacity for a color. An HSLA color value is specified with: `hsla(hue, saturation, lightness, alpha)` The alpha parameter is a number `0.0` (fully transparent) and `1.0` (not transparent at all):
+![[Pasted image 20241023090728.png]]
+
